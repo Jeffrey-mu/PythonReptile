@@ -27,4 +27,6 @@ def getData():
     # cDocText = cSoup.find('article', class_="dark").find('div', class_="inner").ul
     print(cSoup)
     file_handle.writelines(c.text)
+    r.close()
+    file_handle.close()
 getData()
